@@ -13,6 +13,7 @@
   }
   nav{
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     padding: 45px 8% 0 8%;
@@ -234,3 +235,83 @@
     color: red;
     bottom: 35px;
   }
+
+  /* Additional CSS for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    padding: 15px 0;
+  }
+  .hero .content {
+    width: 100%;
+    left: 0;
+    top: 45%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .about .main {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .person {
+    width: 100%;
+  }
+  .service .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  footer {
+    height: auto;
+    padding: 50px 0;
+  }
+  footer p:nth-child(1) {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  footer p:nth-child(2) {
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .social a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .end {
+    font-size: 14px;
+  }
+}
